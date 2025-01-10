@@ -1,0 +1,31 @@
+###get all users
+
+GET http://localhost:5000/api/v1/users/all
+Content-Type: application/json
+
+
+###sign up
+POST http://localhost:5000/api/v1/signup
+Content-Type: application/json
+
+{"firstName":"Martin","lastName":"Maht","email":"martins@gmail.com","password":"123456"}
+
+
+###login
+
+POST http://localhost:5000/api/v1/login
+Content-Type: application/json
+
+{"email":"martins@gmail.com","password":"123456"}
+
+###delete user by id
+
+DELETE http://localhost:5000/api/v1/users/delete/677e9940949f8cae69f8d5b3
+
+###update user
+
+PATCH http://localhost:5000/api/v1/users/update/677ea1525f7ef3241a8267ad
+Content-Type: application/json
+
+{"firstName":"John","lastName":"Doe","email":"johndoe@gmail.com","password":"123456"}
+
